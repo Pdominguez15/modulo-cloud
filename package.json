@@ -11,7 +11,8 @@
     "type-check:watch": "npm run type-check -- --watch",
     "build:dev": "rimraf dist && webpack --config webpack.dev.js",
     "build:prod": "rimraf dist && webpack --config webpack.prod.js",
-    "build:perf": "rimraf dist && webpack --config webpack.perf.js"
+    "build:perf": "rimraf dist && webpack --config webpack.perf.js",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "Pedro Domínguez Aguilera",
@@ -28,6 +29,7 @@
     "css-loader": "^4.0.0",
     "dotenv-webpack": "^2.0.0",
     "file-loader": "^6.0.0",
+    "gh-pages": "^3.1.0",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
     "imagemin-webpack": "^5.1.1",
